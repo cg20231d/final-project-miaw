@@ -14,3 +14,7 @@ config/name="Final-project-miaw"
 run/main_scene="res://level.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+CameraTransition="*res://autoload/CameraTransition.tscn"
