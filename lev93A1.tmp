@@ -1,0 +1,135 @@
+[gd_scene load_steps=13 format=3 uid="uid://bx3xwguvy71uk"]
+
+[ext_resource type="PackedScene" uid="uid://bv2gvitg3xjfx" path="res://scene.gltf" id="1_6g5i7"]
+[ext_resource type="Script" path="res://Camera.gd" id="3_14om2"]
+[ext_resource type="Texture2D" uid="uid://e462hridwhbr" path="res://AllSky_Night_MoonBurst Equirect.png" id="3_vvxkc"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_q2r3i"]
+size = Vector3(50, 2, 50)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_txitn"]
+size = Vector3(50, 2, 50)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o5t53"]
+size = Vector3(20, 2, 20)
+
+[sub_resource type="Animation" id="Animation_wmapx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-4.06477, 6.53396, -8.8104)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 2.70893, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_lsxgt"]
+resource_name = "camera_movement"
+length = 120.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera3D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 6.53396, -17.2802), Vector3(-4.06477, 6.53396, -8.8104)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera3D:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 2.70893, 0), Vector3(0, 1.64017, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8knn7"]
+_data = {
+"RESET": SubResource("Animation_wmapx"),
+"camera_movement": SubResource("Animation_lsxgt")
+}
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_owaxk"]
+panorama = ExtResource("3_vvxkc")
+
+[sub_resource type="Sky" id="Sky_7nkr1"]
+sky_material = SubResource("PanoramaSkyMaterial_owaxk")
+
+[sub_resource type="Environment" id="Environment_k8lkd"]
+background_mode = 2
+sky = SubResource("Sky_7nkr1")
+
+[node name="Level" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0553688, 0.0046196, 0.00743675)
+
+[node name="Floor" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("BoxMesh_q2r3i")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0263424, 0.0458403, 0.00200367)
+shape = SubResource("BoxShape3D_txitn")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.5312, 0)
+
+[node name="scene" parent="RigidBody3D" instance=ExtResource("1_6g5i7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.6694, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.028, 8.58365, -7.61732)
+shape = SubResource("BoxShape3D_o5t53")
+
+[node name="Cameras" type="Node" parent="."]
+
+[node name="Camera1" type="Camera3D" parent="Cameras"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.52052, 7.44667, -16.0101)
+visible = false
+current = true
+
+[node name="Camera2" type="Camera3D" parent="Cameras"]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 1.43051e-06, 9.08531, -15.3814)
+visible = false
+current = true
+
+[node name="Camera" type="Node" parent="."]
+script = ExtResource("3_14om2")
+
+[node name="Camera3D" type="Camera3D" parent="Camera"]
+transform = Transform3D(-0.907853, 0, 0.41929, 0, 1, 0, -0.41929, 0, -0.907853, -4.06477, 6.53396, -8.8104)
+current = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera"]
+autoplay = "camera_movement"
+libraries = {
+"": SubResource("AnimationLibrary_8knn7")
+}
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_k8lkd")

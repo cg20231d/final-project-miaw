@@ -26,6 +26,9 @@ func _process(delta):
 	elif Input.is_action_pressed("ui_text_backspace"):
 		animation_player.speed_scale = -1
 		animation_player.advance(0)
+	elif Input.is_action_pressed("ui_focus_next"):
+		DialogueManager.show_example_dialogue_balloon(load("res://dialogue/test.dialogue"), "start")
+		return
 	else:
 		animation_player.pause()
 	
