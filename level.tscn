@@ -57,7 +57,7 @@ material = ExtResource("10_wsk0h")
 size = Vector3(20, 2, 20)
 
 [sub_resource type="Animation" id="Animation_wmapx"]
-length = 0.001
+length = 10.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true

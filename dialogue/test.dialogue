@@ -9,10 +9,12 @@ Nathan: Here are some response options.
 - Second one
 	Nathan: You picked the second one.
 - Start again => start
-- End the conversation => END
+- End the conversation
+	do GameState.mark_completed() 
+	=> END
 Nathan: I hope this example is helpful.
 Coco: Meow.
 Nathan: You're sussy
 
-
+do GameState.mark_completed()
 => END
