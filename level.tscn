@@ -143,10 +143,10 @@ shape = SubResource("BoxShape3D_txitn")
 physics_material_override = SubResource("PhysicsMaterial_tih54")
 
 [node name="lowpoly_tree" parent="StaticBody3D" instance=ExtResource("4_qgchu")]
-transform = Transform3D(0.004, 0, 0, 0, 0.004, 0, 0, 0, 0.004, 5.39248, 1.43371, -13.8186)
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 5.39248, 1.29683, -13.8186)
 
 [node name="lowpoly_tree2" parent="StaticBody3D" instance=ExtResource("4_qgchu")]
-transform = Transform3D(-0.000202372, 0, 0.00399488, 0, 0.004, 0, -0.00399488, 0, -0.000202372, 4.08301, 1.43371, -9.60121)
+transform = Transform3D(-0.161897, 0, 3.1959, 0, 3.2, 0, -3.1959, 0, -0.161897, 4.08301, 1.29683, -9.60121)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(3.94204, 0, 4.6679, 0, 0.2, 0, -10.2694, 0, 1.79184, 6.30827, 1.03233, -11.6386)
@@ -165,10 +165,10 @@ light_color = Color(0.984314, 1, 0.678431, 1)
 shadow_enabled = true
 
 [node name="lowpoly_tree3" parent="StaticBody3D" instance=ExtResource("4_qgchu")]
-transform = Transform3D(-0.000259871, 0, -0.00399155, 0, 0.004, 0, 0.00399155, 0, -0.000259871, -5.38347, 1.43371, -7.79548)
+transform = Transform3D(-0.18191, 0, -2.79408, 0, 2.8, 0, 2.79408, 0, -0.18191, -5.38347, 1.30186, -7.79548)
 
 [node name="lowpoly_tree4" parent="StaticBody3D" instance=ExtResource("4_qgchu")]
-transform = Transform3D(-0.00395655, 0, -0.000587992, 0, 0.004, 0, 0.000587992, 0, -0.00395655, -5.74376, 1.43371, -12.1967)
+transform = Transform3D(-3.36307, 0, -0.499793, 0, 3.4, 0, 0.499793, 0, -3.36307, -5.74376, 1.30186, -12.1967)
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(0.197483, 0, -4.99934, 0, 0.2, 0, 12.1784, 0, 0.0810687, -7.04714, 1.03233, -10.0536)
@@ -187,7 +187,7 @@ light_color = Color(0.984314, 1, 0.678431, 1)
 shadow_enabled = true
 
 [node name="lowpoly_tree5" parent="StaticBody3D" instance=ExtResource("4_qgchu")]
-transform = Transform3D(0.00394062, 0, -0.000686685, 0, 0.004, 0, 0.000686685, 0, 0.00394062, -4.80316, 1.43371, -3.35884)
+transform = Transform3D(2.95546, 0, -0.515013, 0, 3, 0, 0.515013, 0, 2.95546, -4.80316, 1.24036, -3.35884)
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="StaticBody3D"]
 transform = Transform3D(12.1293, 0, -0.455855, 0, 0.2, 0, 1.11046, 0, 4.97918, -7.34334, 1.03233, -2.24918)
@@ -196,7 +196,7 @@ material_overlay = SubResource("StandardMaterial3D_87tu0")
 mesh = SubResource("SphereMesh_2hmnn")
 
 [node name="LeftOmniLight3D8" type="OmniLight3D" parent="StaticBody3D"]
-transform = Transform3D(0.882146, -0.469379, -0.0387426, 0.25618, 0.409177, 0.875755, -0.395208, -0.782469, 0.4812, -4.42313, 1.26349, -3.82386)
+transform = Transform3D(0.000882146, -0.469379, -0.0387429, 0.00025618, 0.409177, 0.875755, -0.000395208, -0.782469, 0.4812, -4.42313, 1.26349, -3.82386)
 light_color = Color(0.984314, 1, 0.678431, 1)
 shadow_enabled = true
 
