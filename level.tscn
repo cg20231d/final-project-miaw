@@ -1,14 +1,25 @@
-[gd_scene load_steps=13 format=3 uid="uid://bx3xwguvy71uk"]
+[gd_scene load_steps=17 format=3 uid="uid://bx3xwguvy71uk"]
 
 [ext_resource type="PackedScene" uid="uid://bv2gvitg3xjfx" path="res://scene.gltf" id="1_6g5i7"]
+[ext_resource type="Texture2D" uid="uid://drxwnkqymdxq5" path="res://textures/albedo.png" id="1_axlsy"]
+[ext_resource type="Texture2D" uid="uid://0erw52cty355" path="res://textures/normals.png" id="2_8fuq0"]
 [ext_resource type="Script" path="res://Camera.gd" id="3_14om2"]
 [ext_resource type="Texture2D" uid="uid://e462hridwhbr" path="res://AllSky_Night_MoonBurst Equirect.png" id="3_vvxkc"]
+[ext_resource type="Texture2D" uid="uid://doi36kcuxslew" path="res://textures/roughness.png" id="3_yk320"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ef5h3"]
+albedo_texture = ExtResource("1_axlsy")
+roughness_texture = ExtResource("3_yk320")
+normal_enabled = true
+normal_texture = ExtResource("2_8fuq0")
+uv1_scale = Vector3(32, 32, 32)
 
 [sub_resource type="BoxMesh" id="BoxMesh_q2r3i"]
-size = Vector3(50, 2, 50)
+material = SubResource("StandardMaterial3D_ef5h3")
+size = Vector3(60, 2, 60)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_txitn"]
-size = Vector3(50, 2, 50)
+size = Vector3(60, 2, 60)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o5t53"]
 size = Vector3(20, 2, 20)
@@ -85,7 +96,7 @@ background_mode = 2
 sky = SubResource("Sky_7nkr1")
 
 [node name="Level" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0553688, 0.0046196, 0.00743675)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0577217, 0.00538445, 0.0098896)
 
 [node name="Floor" type="StaticBody3D" parent="."]
 
@@ -122,7 +133,7 @@ current = true
 script = ExtResource("3_14om2")
 
 [node name="Camera3D" type="Camera3D" parent="Camera"]
-transform = Transform3D(-0.907853, 0, 0.41929, 0, 1, 0, -0.41929, 0, -0.907853, -4.06477, 6.53396, -8.8104)
+transform = Transform3D(-0.907853, 0, 0.41929, 0, 1, 0, -0.41929, 0, -0.907853, -1.86984, 2.27137, -13.8164)
 current = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Camera"]
@@ -133,3 +144,374 @@ libraries = {
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_k8lkd")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 12.9228, 37.0241, -0.18333)
+light_color = Color(0.772549, 0.85098, 1, 1)
+light_energy = 1.25
+shadow_enabled = true
+
+[node name="BuildingLight" type="Node" parent="."]
+
+[node name="LeftOmniLight3D" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 8.78664, 5.19443, -15.7902)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D2" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 8.10287, 5.18116, -14.1529)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D3" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 7.4664, 5.22307, -12.6665)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D4" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 6.97155, 5.22307, -11.2377)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D5" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 6.24349, 5.1661, -9.87263)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D6" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 5.60031, 5.20304, -8.44864)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D7" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 5.60031, 5.20304, -8.44864)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D8" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 5.18716, 5.23687, -6.84417)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D9" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 12.9798, 5.04474, -14.1101)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D10" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 12.2316, 5.15323, -12.6377)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D11" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 11.8952, 5.19514, -10.9965)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D12" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 11.4003, 5.19514, -9.5677)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D13" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 10.6723, 5.13816, -8.20265)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D14" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 10.0291, 5.1751, -6.77865)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D15" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 10.0291, 5.1751, -6.77865)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D16" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 8.81431, 2.92336, -15.8282)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D17" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 8.13054, 2.91009, -14.1909)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D18" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 7.49406, 2.952, -12.7044)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D19" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 6.99921, 2.952, -11.2756)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D20" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 6.27116, 2.89502, -9.91057)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D21" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 5.62798, 2.93196, -8.48658)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D22" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 5.62798, 2.93196, -8.48658)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D23" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 5.21483, 2.9658, -6.88211)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D24" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 9.61592, 5.20894, -5.17418)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D25" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 13.1408, 2.98218, -13.992)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D26" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 12.2705, 2.88215, -12.6688)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D27" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 11.4711, 2.92407, -11.0345)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D28" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 11.2087, 2.92407, -9.60563)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D29" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 10.6999, 2.86709, -8.24058)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D30" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 10.0567, 2.90403, -6.81659)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D31" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 10.0567, 2.90403, -6.81659)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="LeftOmniLight3D32" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 9.64359, 2.93787, -5.21212)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D9" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.69218, 5.17235, -15.3879)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D10" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.59037, 5.2067, -13.5695)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D11" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.56038, 5.2128, -11.6831)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D12" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.57263, 5.2128, -10.123)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D13" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.83956, 5.25332, -8.42566)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D14" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.8351, 5.15969, -6.35577)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D15" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.72865, 5.18315, -5.29146)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D24" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.69218, 3.00845, -15.3879)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D25" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.59037, 3.0428, -13.5695)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D26" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.56038, 3.0489, -11.6831)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D27" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.57263, 3.0489, -10.123)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D28" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.83956, 3.08942, -8.42566)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D29" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.8351, 2.99579, -6.35577)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D30" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, -7.72865, 3.01925, -5.29146)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D16" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9822, 5.21195, -15.2215)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D17" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9822, 5.21195, -13.5082)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="RightOmniLight3D18" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.2926, 2.91704, -15.1479)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.95485, 5.10464, -1.68286)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D2" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.50053, 5.10464, -1.68286)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D3" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.23728, 5.10464, -1.68286)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D4" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.73431, 5.13946, -1.53703)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D5" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.19596, 5.07388, -1.7454)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D6" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.83285, 5.07388, -1.7454)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D7" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4093, 5.13485, -1.74296)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D8" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.95485, 2.74717, -1.68286)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D9" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.50053, 2.74717, -1.68286)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D10" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.23728, 2.74717, -1.68286)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D11" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.73431, 2.78199, -1.53703)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D12" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.19596, 2.71641, -1.7454)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D13" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.83285, 2.71641, -1.7454)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D14" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.4093, 2.77737, -1.74296)
+light_color = Color(0.984314, 1, 0.678431, 1)
+shadow_enabled = true
+
+[node name="MidOmniLight3D15" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.95424, 0, -0.299041, 0, 1, 0, 0.299041, 0, -0.95424, -0.341626, 4.34929, -0.646728)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_size = 0.2
+light_specular = 0.0
+
+[node name="MidOmniLight3D16" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.95424, 0, -0.299041, 0, 1, 0, 0.299041, 0, -0.95424, 0.380183, 4.34929, -0.610596)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_size = 0.2
+light_specular = 0.0
+
+[node name="MidOmniLight3D18" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.95424, 0, -0.299041, 0, 1, 0, 0.299041, 0, -0.95424, 1.17936, 6.23485, -0.416457)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_size = 0.2
+light_specular = 0.0
+
+[node name="MidOmniLight3D19" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.95424, 0, -0.299041, 0, 1, 0, 0.299041, 0, -0.95424, 1.17936, 6.23485, 1.80896)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_size = 0.2
+light_specular = 0.0
+
+[node name="MidOmniLight3D20" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.95424, 0, -0.299041, 0, 1, 0, 0.299041, 0, -0.95424, 7.43677, 6.31136, -2.7218)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_size = 0.2
+light_specular = 0.0
+
+[node name="MidOmniLight3D21" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.95424, 0, -0.299041, 0, 1, 0, 0.299041, 0, -0.95424, 5.34286, 6.31792, -3.55655)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_size = 0.2
+light_specular = 0.0
+
+[node name="MidOmniLight3D17" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.95424, 0, -0.299041, 0, 1, 0, 0.299041, 0, -0.95424, 5.42731, 4.155, -4.29792)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_size = 0.2
+light_specular = 0.0
+
+[node name="MidOmniLight3D22" type="OmniLight3D" parent="BuildingLight"]
+transform = Transform3D(-0.95424, 0, -0.299041, 0, 1, 0, 0.299041, 0, -0.95424, 5.63035, 4.155, -4.98505)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_size = 0.2
+light_specular = 0.0
