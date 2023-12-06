@@ -6,13 +6,15 @@ var Dialogue = preload("res://Dialogue.gd")
 const keyframes_tolerance = 0.05
 var selected_keyframe = -1
 var amount_correct = 0
+var is_correct = false
 
 func _ready():
 	DialogueManager.dialogue_ended.connect(_dialogue_ended)
-	keyframes.append(Dialogue.new("start", 3, 1))
-	keyframes.append(Dialogue.new("start", 6, 1))
+	keyframes.append(Dialogue.new("q123", 3))
+	keyframes.append(Dialogue.new("q45", 6))
+	keyframes.append(Dialogue.new("q67", 9))
+	keyframes.append(Dialogue.new("q89", 12))
 	keyframes.sort()
-	
 	print(keyframes)
 
 func update_closest_keyframe(time: float):
@@ -20,7 +22,6 @@ func update_closest_keyframe(time: float):
 	var dist = 0
 	for index in keyframes.size():
 		dist = abs(time - keyframes[index].keyframe)
-		print(dist)
 		if dist <= keyframes_tolerance:
 			selected_keyframe = index
 			return
@@ -33,17 +34,14 @@ func current_keyframe():
 	
 	return keyframes[selected_keyframe]
 	
-func save_answer(ans :int):
+func mark_correct():
 	if selected_keyframe == -1 or keyframes[selected_keyframe].completed == true:
-		return
-		
-	if(ans == keyframes[selected_keyframe].answer):
-		amount_correct += 1
-		keyframes[selected_keyframe].is_correct = true
-	else:
-		keyframes[selected_keyframe].is_correct = false
+		return null
 	
-	keyframes[selected_keyframe].completed = true
+	amount_correct += 1
+	is_correct = true
 	
 func _dialogue_ended(Dialogue :Resource):
+	print(amount_correct)
+	keyframes[selected_keyframe].completed = true
 	in_dialogue = false

@@ -1,20 +1,147 @@
-~ start
+~ q123
+=> q1
 
-Nathan: Hi, I'm Nathan and this is Coco.
-Nathan: Sussy Baka
-Coco: Meow.
-Nathan: Here are some response options.
-- First one
-	do GameState.save_answer(1) 
-	Nathan: You picked the first one.
-- Second one
-	do GameState.save_answer(2) 
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation
-	do GameState.save_answer(3) 
-	=> END
-Nathan: I hope this example is helpful.
-Coco: Meow.
-Nathan: You're sussy
+~ q1
+set GameState.is_correct = false
+Diki: Traditional food originating from Surabaya, East Java is...
+- Nasi Padang
+- Rujak Cingur
+	do GameState.mark_correct()
+- Gado-gado
+- Ketoprak
+- Repeat the question => q1
+if GameState.is_correct == true
+	Diki: Nice one! You got it right.
+else
+	Diki: Unfortunately, your response is not accurate.
+=> q2
+
+~ q2
+set GameState.is_correct = false
+Diki: Continue the following song lyrics!
+Burung kakak tua ...
+- Hinggap di kepala
+- Hinggap di jendela
+	do GameState.mark_correct()
+- Hinggap di selada
+- Hinggap di mana
+- Repeat the question => q2
+if GameState.is_correct == true
+	Diki: Well done! You've nailed that answer.
+else
+	Diki: Regrettably, that's not the correct answer.
+=> q3
+
+~ q3
+set GameState.is_correct = false
+Diki: Reyog is a traditional dance originates from ...
+- Purwokerto
+- Kulon Progo
+- Ponorogo
+	do GameState.mark_correct()
+- Probolinggo
+- Repeat the question => q3
+if GameState.is_correct == true
+	Diki: Great job! Your response is spot on.
+else
+	Diki: I'm afraid your answer is incorrect.
+=> END
+
+~ q45
+=> q4
+
+~ q4
+set GameState.is_correct = false
+Bagas: Lawang Sewu used to be the headquarters of a private railroad owned by the Dutch. Lawang Sewu means ...
+- A thousand carriages
+- A thousand glass
+- A thousand wheels
+- A thousand doors
+	do GameState.mark_correct()
+- Repeat the question => q4
+if GameState.is_correct == true
+	Bagas: Excellent! You're really mastering this.
+else
+	Bagas: Apologies, but the answer you provided is not right.
+=> q5
+
+~ q5
+set GameState.is_correct = false
+Bagas: What is the name of a temple in Indonesia that is recognized as a world cultural heritage site by UNESCO?
+- Prambanan temple
+- Borobudur temple
+	do GameState.mark_correct()
+- Dieng temple
+- Plaosan temple
+- Repeat the question => q5
+if GameState.is_correct == true
+	Bagas: Awesome! Your understanding is impressive.
+else
+	Bagas: Sadly, your response is not in line with the correct solution.
+=> END
+
+~ q67
+=> q6
+
+~ q6
+set GameState.is_correct = false
+Ilham: Madiun city is famous for having three replicas of world monuments. here are the replicas in madiun city, except ...
+- Merlion statue
+- Liberty statue
+	do GameState.mark_correct()
+- Eiffel tower
+- Ka'bah
+- Repeat the question => q6
+if GameState.is_correct == true
+	Ilham: Fantastic! You've truly excelled with that answer.
+else
+	Ilham: Unfortunately, that's not the right answer.
+=> q7
+
+~ q7
+set GameState.is_correct = false
+Ilham: West Sumatra's Dendeng, called "Dendeng Batokok", is named by how the way it is made. How is this made?
+- Long boiled
+- Beaten
+	do GameState.mark_correct()
+- Covered in banana leaves
+- Soaked in spices 24 hours
+- Repeat the question => q7
+if GameState.is_correct == true
+	Ilham: Outstanding! Your accuracy is commendable.
+else
+	Ilham: I regret to inform you that your answer is incorrect.
+=> END
+
+~ q89
+=> q8
+
+~ q8
+set GameState.is_correct = false
+Kurniawan: The "Mante" tribe is a tribe from Aceh with a height of only 1 meter whose existence is still a mystery. They are believed to live in ... areas.
+- Forest
+	do GameState.mark_correct()
+- Mining
+- Lake
+- Marine
+- Repeat the question => q8
+if GameState.is_correct == true
+	Kurniawan: Bravo! You're showcasing exceptional knowledge.
+else
+	Kurniawan: Sorry, but the correct response differs from your answer.
+=> q9
+
+~ q9
+set GameState.is_correct = false
+Kurniawan: The "subahnale" motif is a woven cloth that is a pattern on the runway of the Mandalika International Circuit. The following is the uniqueness of this motif, except...
+- Make dhikr while weaving
+- Made by menopausal women
+- Princess Mandalika's beauty style 
+	do GameState.mark_correct()
+- Motifs such as honeycombs filled with flowers
+- Repeat the question => q9
+if GameState.is_correct == true
+	Kurniawan: Phenomenal! Your grasp of the material is truly remarkable.
+else
+	Kurniawan: Alas, your answer is not the one we're looking for.
 => END

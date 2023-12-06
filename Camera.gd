@@ -11,8 +11,9 @@ func _ready():
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	spot_light_3d.transform = camera_3d.transform
+	spot_light_3d.transform = Transform3D(Basis.IDENTITY, camera_3d.to_global(Vector3(0.2, -0.5, 0)))
 	spot_light_3d.rotation = camera_3d.rotation
+	
 	
 	if not animation_player.is_playing():
 		animation_player.play("camera_movement")
@@ -27,7 +28,6 @@ func _process(delta):
 		animation_player.pause()
 	
 	GameState.update_closest_keyframe(animation_player.current_animation_position)
-	print(GameState.current_keyframe())
 	
 	if not GameState.in_dialogue and GameState.current_keyframe() and not GameState.current_keyframe().completed:
 		GameState.in_dialogue = true
