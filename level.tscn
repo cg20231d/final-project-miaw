@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bx3xwguvy71uk"]
+[gd_scene load_steps=31 format=3 uid="uid://bx3xwguvy71uk"]
 
 [ext_resource type="PackedScene" uid="uid://bv2gvitg3xjfx" path="res://scene.gltf" id="1_6g5i7"]
 [ext_resource type="Texture2D" uid="uid://drxwnkqymdxq5" path="res://textures/albedo.png" id="1_axlsy"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://clm236xca6m1e" path="res://textures/stoneRoughness.png" id="9_aop5b"]
 [ext_resource type="Material" uid="uid://dohy3xxddqqin" path="res://materials/outline_material.tres" id="10_wsk0h"]
 [ext_resource type="PackedScene" uid="uid://tijtt27w46hl" path="res://simple_bricks_and_steel_fence.glb" id="15_j4600"]
+[ext_resource type="PackedScene" uid="uid://csr616fr3nwt2" path="res://character.tscn" id="16_20vsk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ef5h3"]
 albedo_texture = ExtResource("1_axlsy")
@@ -254,10 +255,10 @@ transform = Transform3D(-0.907853, 0, 0.41929, 0, 1, 0, -0.41929, 0, -0.907853, 
 current = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Camera"]
-autoplay = "camera_movement"
 libraries = {
 "": SubResource("AnimationLibrary_8knn7")
 }
+autoplay = "camera_movement"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_k8lkd")
@@ -790,3 +791,15 @@ transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3626
 
 [node name="simple_bricks_and_steel_fence53" parent="Fence" instance=ExtResource("15_j4600")]
 transform = Transform3D(0.378099, 0, 0.925765, 0, 1, 0, -0.925765, 0, 0.378099, -16.8814, 1.05122, -29.5702)
+
+[node name="Character 1" parent="." instance=ExtResource("16_20vsk")]
+transform = Transform3D(0.820152, 0, 0.572146, 0, 1, 0, -0.572146, 0, 0.820152, 14.1032, 0.994616, -3.47898)
+
+[node name="Character 2" parent="." instance=ExtResource("16_20vsk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1734, 1, -10.4005)
+
+[node name="Character 3" parent="." instance=ExtResource("16_20vsk")]
+transform = Transform3D(-0.994881, 0, -0.101056, 0, 1, 0, 0.101056, 0, -0.994881, 4.0864, 1, -17.5187)
+
+[node name="Character 4" parent="." instance=ExtResource("16_20vsk")]
+transform = Transform3D(-0.95424, 0, 0.299041, 0, 1, 0, -0.299041, 0, -0.95424, -2.67697, 1, -7.32269)
