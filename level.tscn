@@ -401,7 +401,6 @@ sky_material = SubResource("PanoramaSkyMaterial_owaxk")
 background_mode = 2
 background_energy_multiplier = 0.4
 sky = SubResource("Sky_7nkr1")
-volumetric_fog_enabled = true
 volumetric_fog_density = 0.1
 volumetric_fog_length = 737.89
 volumetric_fog_detail_spread = 6.0
@@ -1001,6 +1000,1206 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0196, 0, -2.48412)
 mesh = SubResource("ArrayMesh_0gk1o")
 skeleton = NodePath("")
 
+[node name="bushPack3S2" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(-0.591242, 0, 0.461447, 0, 0.6, 0, -0.461447, 0, -0.591242, 14.2533, 1.34985, 2.62515)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_5" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 3.70611, 0, -9.84564)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_4" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(-0.940833, 0, 0.338869, 0, 0.999999, 0, -0.338869, 0, -0.940833, 4.18439, -0.0511556, -11.3853)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_4" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 4.01957, 0, -10.7516)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_8" type="MeshInstance3D" parent="Green/bushPack3S2"]
+transform = Transform3D(-0.917275, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917275, 4.34473, -0.123922, -12.1849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bushPack3S3" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(-0.591242, 0, 0.461447, 0, 0.6, 0, -0.461447, 0, -0.591242, 5.35326, 1.34985, 9.01356)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S3"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S3"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S3"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S3"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S3"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S3"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S3"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S3"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S3"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S3"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bushPack3S4" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(-0.217814, 0, 0.717675, 0, 0.6, 0, -0.717675, 0, -0.217814, -0.202533, 1.34985, 12.2664)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_5" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 3.70611, 0, -9.84564)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_4" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(-0.940833, 0, 0.338869, 0, 0.999999, 0, -0.338869, 0, -0.940833, 4.18439, -0.0511556, -11.3853)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_4" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 4.01957, 0, -10.7516)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_8" type="MeshInstance3D" parent="Green/bushPack3S4"]
+transform = Transform3D(-0.917275, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917275, 4.34473, -0.123922, -12.1849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bushPack3S5" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(-0.217814, 0, 0.717675, 0, 0.6, 0, -0.717675, 0, -0.217814, -11.1933, 1.34985, 12.3309)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S5"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bushPack3S6" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(0.72274, 0, 0.200366, 0, 0.6, 0, -0.200366, 0, 0.72274, -19.0587, 1.34985, 11.3252)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_5" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 3.70611, 0, -9.84564)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_4" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(-0.940833, 0, 0.338869, 0, 0.999999, 0, -0.338869, 0, -0.940833, 4.18439, -0.0511556, -11.3853)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_4" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 4.01957, 0, -10.7516)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_8" type="MeshInstance3D" parent="Green/bushPack3S6"]
+transform = Transform3D(-0.917275, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917275, 4.34473, -0.123922, -12.1849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bushPack3S7" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(0.717229, 0, 0.219279, 0, 0.6, 0, -0.219279, 0, 0.717229, -18.8363, 1.34985, 0.336432)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S7"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bushPack3S8" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(0.72274, 0, 0.200366, 0, 0.6, 0, -0.200366, 0, 0.72274, -18.9376, 1.34985, -7.96667)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_5" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 3.70611, 0, -9.84564)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_4" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(-0.940833, 0, 0.338869, 0, 0.999999, 0, -0.338869, 0, -0.940833, 4.18439, -0.0511556, -11.3853)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_4" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 4.01957, 0, -10.7516)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_8" type="MeshInstance3D" parent="Green/bushPack3S8"]
+transform = Transform3D(-0.917275, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917275, 4.34473, -0.123922, -12.1849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bushPack3S9" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(0.717229, 0, 0.219279, 0, 0.6, 0, -0.219279, 0, 0.717229, -18.8671, 1.34985, -18.8509)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_8" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.59205, -0.123922, -9.71507)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_9" type="MeshInstance3D" parent="Green/bushPack3S9"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.83337, -0.123922, -10.478)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bushPack3S10" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(0.669115, 0, -0.338801, 0, 0.6, 0, 0.338801, 0, 0.669115, -18.3407, 1.34542, -28.2017)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S10"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S10"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S10"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S10"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S10"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S10"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bushPack3S11" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(0.186974, 0, -0.72632, 0, 0.6, 0, 0.72632, 0, 0.186974, -14.6075, 1.34985, -30.6031)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_5" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 3.70611, 0, -9.84564)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_4" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(-0.940833, 0, 0.338869, 0, 0.999999, 0, -0.338869, 0, -0.940833, 4.18439, -0.0511556, -11.3853)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_4" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 4.01957, 0, -10.7516)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_8" type="MeshInstance3D" parent="Green/bushPack3S11"]
+transform = Transform3D(-0.917275, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917275, 4.34473, -0.123922, -12.1849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bushPack3S12" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(0.188254, 0, -0.725989, 0, 0.6, 0, 0.725989, 0, 0.188254, -3.75069, 1.34985, -30.2075)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S12"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bushPack3S13" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(0.188127, 0, -0.726022, 0, 0.6, 0, 0.726022, 0, 0.188127, 4.58045, 1.34985, -29.8893)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_5" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 3.70611, 0, -9.84564)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_4" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(-0.940833, 0, 0.338869, 0, 0.999999, 0, -0.338869, 0, -0.940833, 4.18439, -0.0511556, -11.3853)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_4" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(-0.999502, 0, -0.0315503, 0, 1, 0, 0.0315503, 0, -0.999502, 4.01957, 0, -10.7516)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_8" type="MeshInstance3D" parent="Green/bushPack3S13"]
+transform = Transform3D(-0.917275, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917275, 4.34473, -0.123922, -12.1849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bushPack3S14" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(0.171964, 0, -0.73002, 0, 0.6, 0, 0.73002, 0, 0.171964, 15.5022, 1.34985, -29.4626)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_8" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.59205, -0.123922, -9.71507)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_9" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.83337, -0.123922, -10.478)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_10" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.95954, -0.123922, -11.3869)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_11" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 4.14882, -0.123922, -12.3531)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_12" type="MeshInstance3D" parent="Green/bushPack3S14"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 4.34211, -0.123922, -13.2923)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bushPack3S15" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(-0.727839, 0, -0.180971, 0, 0.6, 0, 0.180971, 0, -0.727839, 26.758, 1.34985, -28.045)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_8" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.59205, -0.123922, -9.71507)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_9" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.83337, -0.123922, -10.478)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_10" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.95954, -0.123922, -11.3869)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_11" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 4.14882, -0.123922, -12.3531)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_12" type="MeshInstance3D" parent="Green/bushPack3S15"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 4.34211, -0.123922, -13.2923)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bushPack3S16" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(-0.721177, 0, -0.205923, 0, 0.6, 0, 0.205923, 0, -0.721177, 26.6714, 1.34985, -16.332)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_8" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.59205, -0.123922, -9.71507)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_9" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.83337, -0.123922, -10.478)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_10" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.95954, -0.123922, -11.3869)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_004_green_11" type="MeshInstance3D" parent="Green/bushPack3S16"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 4.14882, -0.123922, -12.3531)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bushPack3S17" type="MeshInstance3D" parent="Green"]
+transform = Transform3D(-0.58902, 0, 0.46428, 0, 0.6, 0, -0.46428, 0, -0.58902, 25.9358, 1.34985, -5.6395)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_3" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0.341884, 0, -0.89563)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_2" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(0.929674, 0, -0.368384, 0, 1, 0, 0.368384, 0, 0.929674, -0.184732, -0.0511556, 0.628168)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_3" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(0.874298, 0, -0.48539, 0, 1, 0, 0.48539, 0, 0.874298, 0.702512, -0.123922, -1.91686)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_1" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 0.871993, 0, -2.45084)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_0" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(0.951835, 0, -0.306609, 0, 1, 0, 0.306609, 0, 0.951835, 1.16411, -0.0511556, -3.4732)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_5" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(-0.889177, 0, 0.457564, 0, 1, 0, -0.457564, 0, -0.889177, 3.37788, -0.123922, -8.81354)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_6" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 1, 0, 0.0970444, 0, -0.99528, 3.22533, 0, -8.27448)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_6" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(-0.961035, 0, 0.276426, 0, 0.999999, 0, -0.276426, 0, -0.961035, 2.96562, -0.0511556, -7.24342)
+mesh = SubResource("ArrayMesh_a7gvv")
+skeleton = NodePath("")
+
+[node name="bush_004_green_7" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(-0.917276, 0, 0.398253, 0, 0.999999, 0, -0.398253, 0, -0.917276, 2.71216, -0.123922, -6.29849)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_7" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(-0.99528, 0, -0.0970444, 0, 0.999999, 0, 0.0970444, 0, -0.99528, 2.45162, 0, -5.70314)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
+[node name="bush_004_green_1" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(0.904254, 0, -0.426995, 0, 1, 0, 0.426995, 0, 0.904254, 1.44725, -0.123922, -4.40966)
+mesh = SubResource("ArrayMesh_d8mw1")
+skeleton = NodePath("")
+
+[node name="bush_with_modifiers_green_2" type="MeshInstance3D" parent="Green/bushPack3S17"]
+transform = Transform3D(0.997846, 0, 0.0655947, 0, 1, 0, -0.0655947, 0, 0.997846, 1.72645, 0, -4.99649)
+mesh = SubResource("ArrayMesh_0gk1o")
+skeleton = NodePath("")
+
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6.5312, 0)
 
@@ -1051,7 +2250,7 @@ environment = SubResource("Environment_k8lkd")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 12.9228, 37.0241, -0.18333)
 light_color = Color(0.772549, 0.85098, 1, 1)
-light_energy = 0.1
+light_energy = 2.0
 shadow_enabled = true
 
 [node name="BuildingLight" type="Node" parent="."]
