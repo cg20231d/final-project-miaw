@@ -3,7 +3,7 @@
 
 ~ q1
 set GameState.is_correct = false
-Diki: Traditional food originating from Surabaya, East Java is...
+Diki: Traditional food originating from Surabaya, East Java is ...
 - Nasi Padang
 - Rujak Cingur
 	do GameState.mark_correct()
@@ -85,7 +85,7 @@ else
 
 ~ q6
 set GameState.is_correct = false
-Ilham: Madiun city is famous for having three replicas of world monuments. here are the replicas in madiun city, except ...
+Ilham: Madiun city is famous for having three replicas of world monuments. Here are the replicas in madiun city, except ...
 - Merlion statue
 - Liberty statue
 	do GameState.mark_correct()
@@ -133,8 +133,8 @@ else
 
 ~ q9
 set GameState.is_correct = false
-Kurniawan: The "subahnale" motif is a woven cloth that is a pattern on the runway of the Mandalika International Circuit. The following is the uniqueness of this motif, except...
-- Make dhikr while weaving
+Kurniawan: The "subahnale" motif is a woven cloth that is a pattern on the runway of the Mandalika International Circuit. The following is the uniqueness of this motif, except ...
+- Make dhikr while weaving it
 - Made by menopausal women
 - Princess Mandalika's beauty style 
 	do GameState.mark_correct()
