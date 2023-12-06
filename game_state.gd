@@ -11,9 +11,9 @@ var is_correct = false
 func _ready():
 	DialogueManager.dialogue_ended.connect(_dialogue_ended)
 	keyframes.append(Dialogue.new("q123", 3))
-	keyframes.append(Dialogue.new("q45", 6))
-	keyframes.append(Dialogue.new("q67", 9))
-	keyframes.append(Dialogue.new("q89", 12))
+	keyframes.append(Dialogue.new("q45", 9))
+	keyframes.append(Dialogue.new("q67", 16))
+	keyframes.append(Dialogue.new("q89", 24.7))
 	keyframes.sort()
 	print(keyframes)
 

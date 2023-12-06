@@ -2,6 +2,7 @@ extends Node
 
 @onready var animation_player = $AnimationPlayer
 const DIALOGUE = preload("res://dialogue/Dialogue.dialogue")
+const speed_scale = 0.75
 @onready var camera_3d = $Camera3D
 @onready var spot_light_3d = $SpotLight3D
 
@@ -19,10 +20,10 @@ func _process(delta):
 		animation_player.play("camera_movement")
 	
 	if not GameState.in_dialogue and Input.is_action_pressed("ui_accept"):
-		animation_player.speed_scale = 1
+		animation_player.speed_scale = speed_scale
 		animation_player.advance(0)
 	elif not GameState.in_dialogue and Input.is_action_pressed("ui_text_backspace"):
-		animation_player.speed_scale = -1
+		animation_player.speed_scale = -speed_scale
 		animation_player.advance(0)
 	else:
 		animation_player.pause()

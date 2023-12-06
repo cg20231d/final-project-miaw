@@ -144,4 +144,17 @@ if GameState.is_correct == true
 	Kurniawan: Phenomenal! Your grasp of the material is truly remarkable.
 else
 	Kurniawan: Alas, your answer is not the one we're looking for.
+=> score
+
+~ score
+
+Kurniawan: Your score is : {{ GameState.amount_correct }} / 9
+if GameState.amount_correct == 9
+	Kurniawan: Outstanding! Perfect score, you aced it!
+elif GameState.amount_correct > 6
+	Kurniawan: Excellent work! You scored impressively, mastering most of the questions.
+elif GameState.amount_correct > 3
+	Kurniawan: Good effort! You demonstrated a solid understanding of the material.
+else
+	Kurniawan: Nice try! Consider reviewing the material to improve your score next time.
 => END
