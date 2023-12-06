@@ -2,6 +2,8 @@ extends Node
 
 @onready var animation_player = $AnimationPlayer
 const DIALOGUE = preload("res://dialogue/Dialogue.dialogue")
+@onready var camera_3d = $Camera3D
+@onready var spot_light_3d = $SpotLight3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -9,6 +11,9 @@ func _ready():
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	spot_light_3d.transform = camera_3d.transform
+	spot_light_3d.rotation = camera_3d.rotation
+	
 	if not animation_player.is_playing():
 		animation_player.play("camera_movement")
 	

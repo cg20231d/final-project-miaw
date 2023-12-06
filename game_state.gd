@@ -3,14 +3,14 @@ extends Node
 var in_dialogue: bool = false
 var keyframes = []
 var Dialogue = preload("res://Dialogue.gd")
-const keyframes_tolerance = 0.3
+const keyframes_tolerance = 0.05
 var selected_keyframe = -1
 var amount_correct = 0
 
 func _ready():
 	DialogueManager.dialogue_ended.connect(_dialogue_ended)
-	keyframes.append(Dialogue.new("start", 4, 1))
-	keyframes.append(Dialogue.new("start", 2, 1))
+	keyframes.append(Dialogue.new("start", 3, 1))
+	keyframes.append(Dialogue.new("start", 6, 1))
 	keyframes.sort()
 	
 	print(keyframes)
