@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://bx3xwguvy71uk"]
+[gd_scene load_steps=30 format=3 uid="uid://bx3xwguvy71uk"]
 
 [ext_resource type="PackedScene" uid="uid://bv2gvitg3xjfx" path="res://scene.gltf" id="1_6g5i7"]
 [ext_resource type="Texture2D" uid="uid://drxwnkqymdxq5" path="res://textures/albedo.png" id="1_axlsy"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cs3w2qjo73qby" path="res://textures/stoneNormals.png" id="8_hlxst"]
 [ext_resource type="Texture2D" uid="uid://clm236xca6m1e" path="res://textures/stoneRoughness.png" id="9_aop5b"]
 [ext_resource type="Material" uid="uid://dohy3xxddqqin" path="res://materials/outline_material.tres" id="10_wsk0h"]
+[ext_resource type="PackedScene" uid="uid://tijtt27w46hl" path="res://simple_bricks_and_steel_fence.glb" id="15_j4600"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ef5h3"]
 albedo_texture = ExtResource("1_axlsy")
@@ -133,10 +134,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0577217, 0.00538445, 0.009
 [node name="Floor" type="StaticBody3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 mesh = SubResource("BoxMesh_q2r3i")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0263424, 0.0458403, 0.00200367)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10)
 shape = SubResource("BoxShape3D_txitn")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
@@ -630,3 +632,161 @@ transform = Transform3D(-0.95424, 0, -0.299041, 0, 1, 0, 0.299041, 0, -0.95424, 
 light_color = Color(0.984314, 1, 0.678431, 1)
 light_size = 0.2
 light_specular = 0.0
+
+[node name="Fence" type="Node" parent="."]
+
+[node name="simple_bricks_and_steel_fence" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.811421, 0, 0.584462, 0, 1, 0, -0.584462, 0, 0.811421, 9.1038, 1.05122, 6.42267)
+
+[node name="simple_bricks_and_steel_fence2" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.811421, 0, 0.584462, 0, 1, 0, -0.584462, 0, 0.811421, 6.77545, 1.05122, 8.10516)
+
+[node name="simple_bricks_and_steel_fence3" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.811421, 0, 0.584462, 0, 1, 0, -0.584462, 0, 0.811421, 13.7636, 1.05122, 3.06149)
+
+[node name="simple_bricks_and_steel_fence4" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.811421, 0, 0.584462, 0, 1, 0, -0.584462, 0, 0.811421, 11.4353, 1.05122, 4.74397)
+
+[node name="simple_bricks_and_steel_fence5" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999976, 0, 0.00691144, 0, 1, 0, -0.00691144, 0, 0.999976, -1.57266, 1.05122, 8.9518)
+
+[node name="simple_bricks_and_steel_fence6" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999976, 0, 0.00691144, 0, 1, 0, -0.00691144, 0, 0.999976, -4.44518, 1.05122, 8.97603)
+
+[node name="simple_bricks_and_steel_fence7" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999976, 0, 0.00691144, 0, 1, 0, -0.00691144, 0, 0.999976, 4.17273, 1.05122, 8.90823)
+
+[node name="simple_bricks_and_steel_fence8" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999976, 0, 0.00691144, 0, 1, 0, -0.00691144, 0, 0.999976, 1.30021, 1.05122, 8.93246)
+
+[node name="simple_bricks_and_steel_fence9" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999976, 0, 0.00691144, 0, 1, 0, -0.00691144, 0, 0.999976, -13.0541, 1.05122, 9.03601)
+
+[node name="simple_bricks_and_steel_fence10" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999976, 0, 0.00691144, 0, 1, 0, -0.00691144, 0, 0.999976, -15.9267, 1.05122, 9.06023)
+
+[node name="simple_bricks_and_steel_fence11" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999976, 0, 0.00691144, 0, 1, 0, -0.00691144, 0, 0.999976, -7.30875, 1.05122, 8.99244)
+
+[node name="simple_bricks_and_steel_fence12" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999976, 0, 0.00691144, 0, 1, 0, -0.00691144, 0, 0.999976, -10.1813, 1.05122, 9.01667)
+
+[node name="simple_bricks_and_steel_fence13" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.811421, 0, 0.584462, 0, 1, 0, -0.584462, 0, 0.811421, 23.2868, 1.05122, -3.60126)
+
+[node name="simple_bricks_and_steel_fence14" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.811421, 0, 0.584462, 0, 1, 0, -0.584462, 0, 0.811421, 20.9584, 1.05122, -1.91877)
+
+[node name="simple_bricks_and_steel_fence16" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.811421, 0, 0.584462, 0, 1, 0, -0.584462, 0, 0.811421, 25.6182, 1.05122, -5.27995)
+
+[node name="simple_bricks_and_steel_fence15" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3641, 1.05122, 4.78063)
+
+[node name="simple_bricks_and_steel_fence17" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3625, 1.05122, 7.65325)
+
+[node name="simple_bricks_and_steel_fence18" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3626, 1.05122, -0.964927)
+
+[node name="simple_bricks_and_steel_fence19" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3609, 1.05122, 1.9077)
+
+[node name="simple_bricks_and_steel_fence20" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3641, 1.05122, -6.70826)
+
+[node name="simple_bricks_and_steel_fence21" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3625, 1.05122, -3.83564)
+
+[node name="simple_bricks_and_steel_fence22" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3626, 1.05122, -12.4538)
+
+[node name="simple_bricks_and_steel_fence23" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3609, 1.05122, -9.58119)
+
+[node name="simple_bricks_and_steel_fence24" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3641, 1.05122, -18.2085)
+
+[node name="simple_bricks_and_steel_fence25" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3625, 1.05122, -15.3359)
+
+[node name="simple_bricks_and_steel_fence26" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3626, 1.05122, -23.9541)
+
+[node name="simple_bricks_and_steel_fence27" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3609, 1.05122, -21.0815)
+
+[node name="simple_bricks_and_steel_fence28" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, 26.7883, 1.05122, -10.4406)
+
+[node name="simple_bricks_and_steel_fence29" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, 26.79, 1.05122, -7.56802)
+
+[node name="simple_bricks_and_steel_fence30" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, 26.7899, 1.05122, -16.1862)
+
+[node name="simple_bricks_and_steel_fence31" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, 26.7915, 1.05122, -13.3136)
+
+[node name="simple_bricks_and_steel_fence32" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, 26.7883, 1.05122, -21.9341)
+
+[node name="simple_bricks_and_steel_fence33" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, 26.79, 1.05122, -19.0614)
+
+[node name="simple_bricks_and_steel_fence34" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, 26.7899, 1.05122, -27.6796)
+
+[node name="simple_bricks_and_steel_fence35" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, 26.7915, 1.05122, -24.807)
+
+[node name="simple_bricks_and_steel_fence36" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, 19.6273, 1.05122, -29.4042)
+
+[node name="simple_bricks_and_steel_fence37" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, 16.757, 1.05122, -29.5185)
+
+[node name="simple_bricks_and_steel_fence38" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, 25.3681, 1.05122, -29.1705)
+
+[node name="simple_bricks_and_steel_fence39" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, 22.4978, 1.05122, -29.2849)
+
+[node name="simple_bricks_and_steel_fence40" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, 8.13329, 1.05122, -29.8342)
+
+[node name="simple_bricks_and_steel_fence41" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, 5.26294, 1.05122, -29.9486)
+
+[node name="simple_bricks_and_steel_fence42" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, 13.8741, 1.05122, -29.6005)
+
+[node name="simple_bricks_and_steel_fence43" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, 11.0037, 1.05122, -29.7149)
+
+[node name="simple_bricks_and_steel_fence44" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, -3.34394, 1.05122, -30.2799)
+
+[node name="simple_bricks_and_steel_fence45" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, -6.21428, 1.05122, -30.3943)
+
+[node name="simple_bricks_and_steel_fence46" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, 2.39687, 1.05122, -30.0463)
+
+[node name="simple_bricks_and_steel_fence47" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, -0.473484, 1.05122, -30.1607)
+
+[node name="simple_bricks_and_steel_fence48" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, -14.838, 1.05122, -30.71)
+
+[node name="simple_bricks_and_steel_fence50" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, -9.09718, 1.05122, -30.4763)
+
+[node name="simple_bricks_and_steel_fence51" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.999592, 0, -0.0285671, 0, 1, 0, 0.0285671, 0, 0.999592, -11.9675, 1.05122, -30.5907)
+
+[node name="simple_bricks_and_steel_fence52" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.000942484, 0, 1, 0, 1, 0, -1, 0, 0.000942484, -17.3626, 1.05122, -26.8188)
+
+[node name="simple_bricks_and_steel_fence53" parent="Fence" instance=ExtResource("15_j4600")]
+transform = Transform3D(0.378099, 0, 0.925765, 0, 1, 0, -0.925765, 0, 0.378099, -16.8814, 1.05122, -29.5702)
