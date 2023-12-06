@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://clm236xca6m1e" path="res://textures/stoneRoughness.png" id="9_aop5b"]
 [ext_resource type="Material" uid="uid://dohy3xxddqqin" path="res://materials/outline_material.tres" id="10_wsk0h"]
 [ext_resource type="PackedScene" uid="uid://tijtt27w46hl" path="res://simple_bricks_and_steel_fence.glb" id="15_j4600"]
-[ext_resource type="PackedScene" path="res://character.tscn" id="16_20vsk"]
+[ext_resource type="PackedScene" uid="uid://csr616fr3nwt2" path="res://character.tscn" id="16_20vsk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ef5h3"]
 albedo_texture = ExtResource("1_axlsy")
