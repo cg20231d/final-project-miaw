@@ -5,16 +5,16 @@ Nathan: Sussy Baka
 Coco: Meow.
 Nathan: Here are some response options.
 - First one
+	do GameState.save_answer(1) 
 	Nathan: You picked the first one.
 - Second one
+	do GameState.save_answer(2) 
 	Nathan: You picked the second one.
 - Start again => start
 - End the conversation
-	do GameState.mark_completed() 
+	do GameState.save_answer(3) 
 	=> END
 Nathan: I hope this example is helpful.
 Coco: Meow.
 Nathan: You're sussy
-
-do GameState.mark_completed()
 => END
