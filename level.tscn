@@ -1003,7 +1003,7 @@ material_overlay = SubResource("StandardMaterial3D_87tu0")
 mesh = SubResource("SphereMesh_2hmnn")
 
 [node name="LeftOmniLight3D6" type="OmniLight3D" parent="Green"]
-transform = Transform3D(0.487585, 0.727584, -0.482578, 0.25618, 0.409177, 0.875755, 0.834645, -0.550632, 0.0131163, -4.87339, 1.26349, -7.61609)
+transform = Transform3D(0.487585, 0.727584, -0.482579, 0.25618, 0.409177, 0.875755, 0.834645, -0.550632, 0.0131161, -5.49457, 1.26349, -7.75352)
 light_color = Color(0.984314, 1, 0.678431, 1)
 light_energy = 0.4
 light_specular = 0.0
@@ -5108,15 +5108,59 @@ mesh = SubResource("ArrayMesh_2vjgq")
 skeleton = NodePath("")
 
 [node name="LeftOmniLight3D13" type="OmniLight3D" parent="Amenities/FarolaDe1_001"]
-transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875755, -0.956349, 0.239071, 0.168055, 2.98772, 0.526352, 0.0269222)
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875755, -0.956349, 0.239071, 0.168055, 2.98772, 0.532198, 0.102224)
 light_color = Color(0.984314, 1, 0.678431, 1)
-light_energy = 0.4
+light_energy = 0.25
+light_specular = 0.0
 shadow_enabled = true
 
 [node name="LeftOmniLight3D14" type="OmniLight3D" parent="Amenities/FarolaDe1_001"]
-transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875754, -0.956349, 0.239071, 0.168055, 2.98772, -0.501165, 0.0251598)
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875755, -0.956349, 0.239071, 0.168055, 2.98772, 0.412255, -0.0457516)
 light_color = Color(0.984314, 1, 0.678431, 1)
-light_energy = 0.4
+light_energy = 0.25
+light_specular = 0.0
+shadow_enabled = true
+
+[node name="LeftOmniLight3D15" type="OmniLight3D" parent="Amenities/FarolaDe1_001"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875755, -0.956349, 0.239071, 0.168055, 2.98772, 0.629275, -0.0625992)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_energy = 0.25
+light_specular = 0.0
+shadow_enabled = true
+
+[node name="LeftOmniLight3D16" type="OmniLight3D" parent="Amenities/FarolaDe1_001"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875755, -0.956349, 0.239071, 0.168055, 2.98772, 0.509696, -0.116739)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_energy = 0.25
+light_specular = 0.0
+shadow_enabled = true
+
+[node name="LeftOmniLight3D17" type="OmniLight3D" parent="Amenities/FarolaDe1_001"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875755, -0.956349, 0.239071, 0.168055, 2.98772, -0.502699, 0.18256)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_energy = 0.25
+light_specular = 0.0
+shadow_enabled = true
+
+[node name="LeftOmniLight3D18" type="OmniLight3D" parent="Amenities/FarolaDe1_001"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875755, -0.956349, 0.239071, 0.168055, 2.98772, -0.622642, 0.0345879)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_energy = 0.25
+light_specular = 0.0
+shadow_enabled = true
+
+[node name="LeftOmniLight3D19" type="OmniLight3D" parent="Amenities/FarolaDe1_001"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875755, -0.956349, 0.239071, 0.168055, 2.98772, -0.405625, 0.0177383)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_energy = 0.25
+light_specular = 0.0
+shadow_enabled = true
+
+[node name="LeftOmniLight3D20" type="OmniLight3D" parent="Amenities/FarolaDe1_001"]
+transform = Transform3D(-0.140603, -0.880579, 0.452561, 0.25618, 0.409177, 0.875755, -0.956349, 0.239071, 0.168055, 2.98772, -0.525205, -0.0363998)
+light_color = Color(0.984314, 1, 0.678431, 1)
+light_energy = 0.25
+light_specular = 0.0
 shadow_enabled = true
 
 [node name="Trash" type="MeshInstance3D" parent="Amenities"]
@@ -5181,7 +5225,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.62966, -0.557838, 12.0259)
 material_override = SubResource("StandardMaterial3D_gt2e3")
 transparency = 0.1
-amount = 4
+amount = 2
 lifetime = 0.5
 explosiveness = 0.2
 randomness = 0.1
